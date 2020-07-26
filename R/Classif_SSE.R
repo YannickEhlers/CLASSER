@@ -8,7 +8,7 @@ Classif_SSE <- function(a_data, nseq_SampleSizeToTest, c_learner, c_measurment, 
   
   #Data synthesize, if needed
   n_MaxSampleSizeToTest <- max(nseq_SampleSizeToTest)
-  n_RowData <- nrow(data)
+  n_RowData <- nrow(a_data)
   
   if (n_MaxSampleSizeToTest > n_RowData){
     
