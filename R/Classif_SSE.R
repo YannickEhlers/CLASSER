@@ -58,5 +58,5 @@ Classif_SSE <- function(a_data, nseq_SampleSizeToTest, c_learner, c_measurment, 
   
   
   plot(x = nseq_SampleSizeToTest, y = rowMeans(m_ResMatrix), type = "l", col ="blue", main = "Accuracy", 
-       ylab = "Acc", xlab = "N Sample")
+       ylab = c_measurment, xlab = "N Sample")
 }
