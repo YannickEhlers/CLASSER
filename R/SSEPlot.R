@@ -4,7 +4,7 @@ SSEPlot <- function(SSEObject){
 
   PreductionLoess <- predict(loessRegression)
   
-  plot(PreductionLoess, type = "l", ylim = c(0,1), SimulatedSSEObject)
+  plot(PreductionLoess, type = "l", ylim = c(0,1), xlab = "Sample Sizes Tested", ylab = SSEObject@Measurement, main = paste(SSEObject@MachineLearningType, "with", SSEObject@Learner, sep = " "))
   
   
   PredictionUpperBorder <- PreductionLoess + 2*apply(SSEObject@MeasuredMatrix, 1, sd)
